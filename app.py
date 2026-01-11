@@ -43,7 +43,7 @@ movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 # Streamlit UI
-st.title('Movie Predictor')
+st.title('Movie Recommender System')
 selected_movie_name = st.selectbox('Can I suggest some movies?', movies['title'].values)
 
 if st.button('Search'):
